@@ -19,6 +19,8 @@ pipeline {
             }
             steps {
                 sh 'printenv'
+                echo "printenv"
+                echo "$printenv"
             }
         }
     }
