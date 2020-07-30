@@ -22,6 +22,8 @@ pipeline {
                 echo "printenv"
                 //echo "$printenv"
                 
+                echo "Value of CC is ${env.CC}"
+                echo "Value of EXIT_STATUS is ${env.EXIT_STATUS}"
                 
                 //Printing Environment Variables
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL} and with ${NODE_NAME} node"
