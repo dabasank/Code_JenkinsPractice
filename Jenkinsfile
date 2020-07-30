@@ -24,8 +24,8 @@ pipeline {
                 
                 
                 //Printing Environment Variables
-                echo "Running ${env.BUILD_ID) on ${env.JENKINS_URL} and with ${NODE_NAME} node"
-                echo "Running ${env.BUILD_ID) on ${env.EXECUTOR_NUMBER}"
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL} and with ${NODE_NAME} node"
+                echo "Running ${env.BUILD_ID} on ${env.EXECUTOR_NUMBER}"
                 echo "Workspace is ${env.WORKSPACE}"
             }
         }
