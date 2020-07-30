@@ -22,7 +22,7 @@ pipeline {
                 echo "printenv"
                 //echo "$printenv"
                 
-                echo "Value of CC is ${env.CC}"
+                echo "Value of CC is ${env.CC}.trim()"
                 echo "Value of EXIT_STATUS is ${env.EXIT_STATUS}"
                 
                 //Printing Environment Variables
