@@ -1,6 +1,5 @@
- libraries {
-     lib('TestLibrary')
- }
+
+@Library('TestLibrary')_
 
 pipeline {
     agent any 
@@ -17,6 +16,12 @@ pipeline {
             )}"""
     }
     stages {
+     
+     stage('Demo_Shared_Library') {
+          echo "Hello world"
+          FirstVariable 'Dave'
+     }
+     
         stage('Example') {
             environment {
                 DEBUG_FLAGS = '-g'
