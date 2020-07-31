@@ -1,3 +1,7 @@
+ libraries {
+     lib('TestLibrary')
+ }
+
 pipeline {
     agent any 
     environment {
