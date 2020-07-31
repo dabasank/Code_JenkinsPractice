@@ -16,7 +16,7 @@ pipeline {
      @Library('TestLibrary')_
      stage('Demo_Shared_Library') {
           echo "Hello world"
-          FirstVariable 'Dave'
+          firstVariable 'Dave'
      }
      
         stage('Example') {
