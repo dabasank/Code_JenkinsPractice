@@ -16,14 +16,16 @@ pipeline {
     }
     stages {
      stage('Demo_Shared_Library') {
+         steps {
           echo "Hello world"
           firstVariable 'Dave'
      }
+     }
      
-        stage('Example') {
+     stage('Example') {
             environment {
                 DEBUG_FLAGS = '-g'
-            }
+     }
             steps {
                 sh 'printenv'
                 echo "printenv"
