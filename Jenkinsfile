@@ -18,7 +18,7 @@ pipeline {
      stage('Demo_Shared_Library') {
          steps {
           echo "Hello world"
-          firstVariable "Dave"
+          firstVariable
      }
      }
      
