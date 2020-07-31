@@ -1,5 +1,3 @@
-@Library('TestLibrary')_
-
 pipeline {
     agent any 
     environment {
@@ -14,9 +12,10 @@ pipeline {
                 script: 'exit 1'
             )}"""
     }
-    stages {
+    stages { 
      stage('Demo_Shared_Library') {
          steps {
+          @Library('TestLibrary')_    
           echo "Hello world"
           firstVariable
      }
